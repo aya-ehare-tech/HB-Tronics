@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HB Tronics</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .nav-pills .nav-link i {
+        color: #f17621;
+        /* inactive icon color */
+    }
+
+    .nav-pills .nav-link.active i {
+        color: inherit;
+        /* active icon uses default Bootstrap color */
+    }
+</style>
+
+
+<style>
+    .floating-btn {
+        position: fixed;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        z-index: 9999 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+
+    .whatsapp {
+        bottom: 10px;
+    }
+
+    .messenger {
+        bottom: 20px;
+    }
+
+    .floating-btn img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .floating-btn:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border " style="width: 3rem; height: 3rem; color: #f17621;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt me-2" style="color: #f17621;"></small>
+                    <small>Ras Elkhour - Ras Al Khor Industrial Area 2 - Dubai - United Arab Emirates</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock me-2" style="color: #f17621;"></small>
+                    <small>Mon - Fri : 09.00 AM - 06.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt me-2" style="color: #f17621;"></small>
+                    <small>+971 508 950 164</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white me-1" style="color: #f17621;" href=""><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white me-1" style="color: #f17621;" href=""><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white me-1" style="color: #f17621;" href=""><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white me-0" style="color: #f17621;" href=""><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/logo.png" alt="Logo" style="width: 100px; height: 50px;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn py-4 px-lg-5 d-none d-lg-block" style="color: white; background-color: #f17621;">Get A
+                Quote<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-bg-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h4 class="text-white text-uppercase mb-3 animated slideInDown">HB Tronics –
+                                        Automotive Electronics Training Center</h4>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown"> Driving the Future
+                                        of Automotive Electronics – One Technician at a Time</h1>
+                                    <a href="" class="btn py-3 px-5 animated slideInDown"
+                                        style="color: white; background-color: #f17621;">Learn More<i
+                                            class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/carousel-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-certificate fa-3x flex-shrink-0" style="color: #f17621;"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">A Growing Industry</h5>
+                            <p>With vehicles becoming more software-driven, electronics now make up over 40% of a car’s
+                                value.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex bg-light py-5 px-4">
+                        <i class="fa fa-car fa-3x flex-shrink-0" style="color: #f17621;"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">EV & Hybrid Revolution</h5>
+                            <p>The shift to electric and hybrid vehicles is creating new opportunities for skilled ECU
+                                and diagnostics specialists.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-users-cog fa-3x flex-shrink-0" style="color: #f17621;"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Skilled Talent Gap</h5>
+                            <p>Worldwide, workshops and manufacturers struggle to find technicians with advanced
+                                electronics training — this is where we come in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg"
+                            style="object-fit: cover;" alt="">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
+                            style="background: rgba(0, 0, 0, .08);">
+                            <h1 class="display-4 text-white mb-0">5 <span class="fs-4">Years</span></h1>
+                            <h4 class="text-white">Experience</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class=" text-uppercase" style="color: #f17621;">// About Us //</h6>
+                    <h1 class="mb-4"><span style="color: #f17621;">Who</span> we are</h1>
+                    <h3 class="mb-4">Hands-On Training for the Future of Mobility</h3>
+
+                    <p class="mb-4">
+                        HB Tronics is a specialized automotive electronics training center dedicated to preparing the
+                        next generation of skilled technicians, engineers, and entrepreneurs. Our mission is to bridge
+                        the gap between theory and practice by offering 100% hands-on training in diagnostics, ECU
+                        programming, and advanced vehicle electronics.
+
+                        Founded with the belief that the best way to learn is by doing, HB Tronics provides a real
+                        workshop environment where trainees work directly on vehicles, tools, and live systems. This
+                        approach ensures our graduates leave with the confidence and competence demanded by today’s
+                        automotive industry.
+
+                        Since our inception, we have trained students from across North Africa, building a strong
+                        reputation for excellence and practical expertise. Now, we are expanding to the GCC with a new
+                        training hub in Dubai, delivering our proven learning model to one of the fastest-growing
+                        automotive markets in the world.
+
+                    </p>
+                    <div class="row g-4 mb-3 pb-3">
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                                    style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">01</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Practical, Real-World Learning</h6>
+                                    <span>Train directly on actual vehicles and equipment.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                                    style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">02</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Comprehensive Programs</h6>
+                                    <span>From basic electronics to hybrid and electric vehicle systems.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1"
+                                    style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">03</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Industry-Relevant Skills</h6>
+                                    <span>Designed to meet the demands of modern workshops and manufacturers.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Fact Start -->
+    <div class="container-fluid fact bg-dark my-5 py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-check fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Years Experience</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Expert Technicians</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Satisfied Clients</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-car fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
+                    <p class="text-white mb-0">Compleate Projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl service py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class=" text-uppercase" style="color: #f17621;">// Our Services //</h6>
+                <h1 class="mb-5">What We Offer</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav w-100 nav-pills me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <i class="fa fa-search fa-2x me-3"></i>
+                            <h4 class="m-0">Vehicle Diagnostics</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <i class="fa fa-microchip fa-2x me-3"></i>
+                            <h4 class="m-0">ECU Programming & Repair</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <i class="fa fa-bolt fa-2x me-3"></i>
+                            <h4 class="m-0">Advanced Automotive Electronics</h4>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <i class="fa fa-charging-station fa-2x me-3"></i>
+                            <h4 class="m-0">Hybrid & Electric Vehicle Systems</h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <!-- Vehicle Diagnostics -->
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-1.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Vehicle Diagnostics</h3>
+                                    <p class="mb-4">We provide comprehensive diagnostics training, helping you identify
+                                        and solve vehicle issues with speed and precision.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Use of advanced diagnostic tools</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Covering all vehicle types and
+                                        brands</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Practical fault-finding workshops
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ECU Programming & Repair -->
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-2.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">ECU Programming & Repair</h3>
+                                    <p class="mb-4">Learn to program, repair, and optimize ECUs for peak performance and
+                                        compliance.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Understanding ECU architecture</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Safe and efficient reprogramming</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>ECU troubleshooting techniques</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Advanced Automotive Electronics -->
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Advanced Automotive Electronics</h3>
+                                    <p class="mb-4">Master the systems powering modern vehicles, from infotainment to
+                                        ADAS.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Wiring and system integration</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Component-level repairs</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Safety systems and modules</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hybrid & Electric Vehicle Systems -->
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/service-4.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Hybrid & Electric Vehicle Systems</h3>
+                                    <p class="mb-4">Gain the skills to work confidently with next-gen vehicles.</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>High-voltage safety procedures</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Battery and charging systems</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Electric drive components</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-fluid bg-secondary booking my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 py-5">
+                    <div class="py-5">
+                        <h1 class="text-white mb-4">What We Do Best</h1>
+                        <p class="text-white mb-0">Our team of expert trainers and engineers combines years of
+                            real-world experience with cutting-edge knowledge. We excel at turning complex automotive
+                            systems into clear, hands-on lessons that our students can apply immediately in workshops
+                            and businesses.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class=" h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
+                        style="background-color: black;" data-wow-delay="0.6s">
+                        <h1 class="text-white mb-4">Book For A Service</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Select A Service</option>
+                                        <option value="1">Service 1</option>
+                                        <option value="2">Service 2</option>
+                                        <option value="3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control border-0 datetimepicker-input"
+                                            placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker"
+                                            style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Special Request"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn w-100 py-3" style="color: white; background-color: #f17621;"
+                                        type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class=" text-uppercase" style="color: #f17621;">// Our Clients //</h6>
+                <h1 class="mb-5">Who We Work With!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+
+
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text text-center p-4" style="background-color: #f17621; color: white;">
+                        <h5>Automotive Technicians</h5>
+                        <p class="mb-0">Upgrade your skills for modern vehicles.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text text-center p-4" style="background-color: #f17621; color: white;">
+                        <h5>Workshops & Garages</h5>
+                        <p class="mb-0">Improve your diagnostic and repair capabilities.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text text-center p-4" style="background-color: #f17621; color: white;">
+                        <h5>Entrepreneurs</h5>
+                        <p class="mb-0">Start your automotive electronics business.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text text-center p-4" style="background-color: #f17621; color: white;">
+                        <h5>Engineering Students</h5>
+                        <p class="mb-0">Gain practical experience that boosts your career.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <a href="https://wa.me/+...." target="_blank" class="floating-btn whatsapp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Ras Elkhour - Ras Al Khor Industrial Area 2 - Dubai - United Arab Emirates</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+971 508 950 164</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@hb-tronics.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Opening Hours</h4>
+                    <h6 class="text-light">Monday - Friday:</h6>
+                    <p class="mb-4">09.00 AM - 06.00 PM</p>
+                    <h6 class="text-light">Saturday - Sunday:</h6>
+                    <p class="mb-0">09.00 AM - 12.00 PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="">Vehicle Diagnostics</a>
+                    <a class="btn btn-link" href=""> ECU Programming & Repair</a>
+                    <a class="btn btn-link" href="">Advanced Automotive Electronics</a>
+                    <a class="btn btn-link" href="">Hybrid & Electric Vehicle Systems</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Newsletter</h4>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn py-2 position-absolute top-0 end-0 mt-2 me-2"
+                            style="color: #fff; background-color: #f17621; border: none;">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="text-center  mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">HB Tronics</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square back-to-top" style="color: white; background-color: #f17621;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
